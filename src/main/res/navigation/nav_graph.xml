@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.pokemonfun.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/PokemonListFragment"
+        android:name="com.example.pokemonfun.presentation.list.PokemonListFragment"
+        android:label="@string/pokemon_list_fragment_"
+        tools:layout="@layout/fragment_pokemon_list">
+
+        <action
+            android:id="@+id/navigateToPokemonDetailFragment"
+            app:destination="@id/PokemonDetailFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/PokemonDetailFragment"
+        android:name="com.example.pokemonfun.presentation.detail.PokemonDetailFragment"
+        android:label="@string/pokemon_detail_fragment_"
+        tools:layout="@layout/fragment_pokemon_detail">
+
+        <action
+            android:id="@+id/navigateToPokemonDetailFragment"
+            app:destination="@id/PokemonListFragment" />
+
+        <argument
+            android:name="pokemonId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.pokemonfun.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_PokemonListFragment"
+            app:destination="@id/PokemonListFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PokemonFun</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="pokemon_list_fragment_">Pokemon List Fragment</string>
+    <string name="pokemon_detail_fragment_">Pokemon Detail Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+
+    <string name="welcome_fragment">Bienvenue sur Pokemon Fun</string>
+    <string name="left_button_text">Quit</string>
+    <string name="poke_info">Pokemon Information</string>
+    <string name="poke_tri">Pokemon Trié</string>
+    <string name="detail">Detail</string>
+    <string name="text_choix">Choisissez votre programme</string>
+    <string name="error_generic">Oups !! Something bad happen</string>
+    <string name="splash_screen_fragment">Splash Screen Fragment</string>
+</resources>
